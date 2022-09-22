@@ -1,0 +1,1181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 87%;
+    margin: auto;
+}
+@media (min-width: 768px){
+    .container {
+        width: 80%;
+         
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 80%;
+        
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 75%;
+        
+    }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* height: 100000px; */
+    overflow-x: hidden;
+}
+
+/* ========== Start Global classes ========== */
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-size: 18px;
+    /* margin: auto; */
+    /* text-align: center; */
+
+}
+
+ .m-auto{
+    margin: auto;
+ }
+.mb-10{
+    margin-bottom: 10px;
+}
+.normal{
+    font-weight: normal;
+}
+.head {
+
+    /* width:70px; */
+    margin: 60px auto 20px;
+    padding: 15px 0px;
+    position: relative;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.head::before {
+    content: '';
+    width: 115px;
+    display: block;
+    height: 2px;
+    background-color: rgb(8, 8, 8);
+    margin: auto;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 100%;
+    left: 50%;
+}
+
+.head:after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    transform: translateX(-50%);
+    top: 92%;
+    left: 50%;
+    z-index: 5;
+
+
+}
+
+.content {
+
+    color: grey;
+    max-width: 500px;
+    margin: 60px auto;
+    line-height: 1.5;
+}
+
+.textCenter {
+    text-align: center;
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/60%);
+}
+.listNone{
+    list-style: none;
+
+} .flex{
+    display: flex;
+}
+.captalize{
+    text-transform: capitalize;
+}
+.upperCase{
+    text-transform: uppercase;
+}
+.f-z15px{
+    font-size: 20px;
+}
+/* ========== End  Global classes ========== */
+
+/* ========== Start Header ========== */
+header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    color: #fff;
+}
+
+header:after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    margin: auto;
+    top: -1px;
+    background-color: rgb(0, 0, 0);
+}
+
+header .logo {
+    margin-top: 4px;
+    width: 120px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul,
+header nav {
+    text-transform: capitalize;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+header ul li {
+    padding: 30px 15px;
+    height: 80px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+header ul li:hover,
+header ul li.active {
+    color: #19c8fa;
+    border-bottom: 1px solid #19c8fa;
+    z-index: 2
+}
+
+header .bars {
+    display: none;
+}
+
+/*========== End Header   ========== */
+
+
+
+/*==========   Start landing   ========== */
+.landing {
+    background-color: red;
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    width: 100vw;height: 100vh;
+    position: relative;
+}
+
+ 
+
+.landing {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.landing .textBox {
+    background-color: rgb(15 116 143 /80%);
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    line-height: 2;
+    z-index: 2;
+}
+
+.textContent {
+    max-width: 500px;
+}
+
+/*==========   End landing     ========== */
+
+/*========== Start Services   ========== */
+
+
+
+.headingServices {
+    margin-bottom: -25px;
+    font-weight: bold;
+    color: #19c8fa;
+
+}
+
+/*========== End Services   ========== */
+
+
+/*========== Start Advantges   ========== */
+
+.advantages
+{
+    height: 600px;
+    position: relative;
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+ 
+.advantages .advanragesPhoto{
+    position: relative;
+    top: 210px;
+    flex: 1;
+    text-align: center;
+    
+    
+}
+
+.advantages  .advantagesContent{
+    color: #fff;
+    background-color:rgb(15 116 143 / 70%); 
+    height: 400px;
+    z-index: 999;
+     padding: 50px;
+     flex: 1;
+    
+ }
+ .advantages  .advantagesContent h3
+ {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+ }
+
+ .advantages .advantagesList{
+    margin-top: 40px;
+    display: flex;
+ }
+ .advantages .advantagesList p{
+    margin-left: 10px;
+ }
+
+/*========== End Advantges   ========== */
+
+
+/*========== Start portfolio   ========== */
+ 
+.portfolio ul{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.portfolio ul li{
+    padding: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+.portfolio ul li:hover,
+    .portfolio ul li.active{
+        background-color: #19c8fa;
+}
+
+.portfolio .portfolioPhotos{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfolioPhotos .photo{
+    overflow: hidden;
+    position: relative;
+}
+.portfolio .details{
+    margin-bottom: -100%;
+    position: absolute;
+    background-color: rgb(255, 254, 254);
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 25%;
+    padding: 10px 16px;
+    line-height: 1.6;
+    transition:  .2s ease-in-out;
+
+}
+.portfolio .details .catigory{
+    color: #19c8fa;
+}
+.portfolio .portfolioPhotos .photo img{
+    transition: all .2s;
+    width: 100%;
+}
+.portfolio .portfolioPhotos .photo:hover img{
+    transform: scale(1.1) rotateZ(3deg);
+}
+.portfolio .portfolioPhotos .photo:hover .details{
+    margin-bottom: 0%;
+}
+
+.portfolio .btn{
+    background-color: #19c8fa;
+    color: #fff;
+    display: block;
+
+    margin:  30px auto;
+    /* margin: ; */
+    /* transform: translateX(50%); */
+    /* margin: auto; */
+}
+/*========== End portfolio   ========== */
+
+
+
+
+ /* ======= Start   video section=======  */
+.video{
+    width: 100vw;
+    position: relative;
+    margin-top: 120px;
+}
+.video .overlay{
+    height: 99.6%;
+}
+.video video{
+    width: 100%;
+
+}
+
+.video .videoText{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 50px;
+    background-color: rgb(15 116 143 / 70%);
+    line-height: 3.5;
+
+}
+.video .videoText     h3{
+    font-weight: normal;
+    font-size: 24px;
+
+}
+.video .btn{
+    background-color: black;
+    color: #fff;
+}
+ 
+
+  /* ======= End   video section=======  */
+
+
+  /* ======= Start   About section=======  */
+ .about .photo1{
+    max-width: 600px;
+    position: relative;
+    bottom: -100px;
+    
+
+ }
+ .about .photo1 img{
+   max-width: 97%;
+ }
+
+ .about .photo2{
+    width: 100vw;
+   /* max-height:90% ; */
+    background-image:url('../images/stats.png') ;
+    position: relative;
+    background-size: cover;
+ }
+
+ .about .photo2 .overlay{
+    top: 0;
+    left: 0;
+ }
+ .about .photo2 .photo2Text{
+    background-color: rgb(15 116 143 / 70%);
+    width: 80%;
+    /* padding: 50px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   min-height: 60%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    
+  
+ }
+
+ .about .photo2 .photo2Text .photo2Textinfo{
+    padding: 20px;
+ }
+ .about .photo2 .photo2Text .photo2Textinfo .icon i  {
+  
+    background: black;
+    border: 50%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 13px;
+ }
+.number{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 20px;
+}
+  
+  /* ======= End     About section=======  */
+
+
+   /* ======= ٍStart   testimonials and skills=======  */
+
+   
+   .testimonialsSkills{
+    margin-top: 75px;
+   }
+   .testimonialsSkills .testimonialsSkillsHead h3{
+font-weight: normal;
+
+   }
+
+   .testimonialsSkills .content {
+        color: grey;
+        max-width: 500px;
+        margin: 20px auto 70px;
+        line-height: 1.5;}
+
+        .testimonialContent .text{
+            position: relative;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.198);
+        }
+
+          /* =======Start testiminaolas======= */
+        .testimonialsSkills .testimonialContent{
+            margin-bottom: 60px;
+        }
+        .testimonialsSkills .testimonialContent .testimonialContentImg{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            overflow: hidden;
+            background-size: cover;
+           
+            
+
+        }
+        .testimonialsSkills .testimonialContent .testimonialContentImg.img1{
+            background-image: url('../images/skills-01.jpg');
+
+        }
+
+        .testimonialsSkills .testimonialContent .testimonialContentImg.img2{
+            background-image: url('../images/skills-02.jpg');
+
+        }
+        .testimonialsSkills .testimonialContent .testimonialContentImg img{
+            width: 100%;
+        }
+   .testimonialsSkills .testimonialContent .text .testimonialContentName{
+            color: gray;
+            position: absolute;
+            right: 0;
+            margin: 15px 0px 10px;
+        }
+        .testimonialsSkills  .bulets{
+            justify-content:center;
+
+        }
+   .testimonialsSkills  .bulets li{
+    background-color: transparent;
+    border: 1px solid #19c8fa;
+    width: 15px;
+    margin-right: 10px;
+    height: 15px;
+    border-radius: 50%;
+
+   }
+
+   .testimonialsSkills  .bulets li.active{
+    background-color: #19c8fa;
+   }
+  /* =======End testimonials======= */
+
+   /* =======Start skills======= */
+   .Skills .progresses .progress{
+    margin-top: 30px;
+   }
+   .Skills .progresses .progress h4{
+    font-weight: 550;
+   }
+  .Skills .progresses .progress .div{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(195, 193, 193);
+    margin-top: 10px;
+  }
+  .Skills .progresses .progress .div span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #19c8fa;
+    top: 0;
+    left: 0;
+   
+  }
+  .Skills .progresses .progress:nth-of-type(1) .div span{
+    width: 90%;
+  }.Skills .progresses .progress:nth-of-type(2) .div span{
+    width: 85%;
+  }.Skills .progresses .progress:nth-of-type(3) .div span{
+    width: 80%;
+  }.Skills .progresses .progress:nth-of-type(4) .div span{
+    width: 95%;
+  }
+
+  .Skills .progresses .progress .div span::after{
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: -30px;
+    background-color: black;
+    color: #fff;
+    font-size: 13px;
+    padding: 4.5px;
+    border-radius: 5px;
+  
+}
+
+.Skills .progresses .progress .div span::before{
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: -12px;
+    background-color: black;
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotateZ(46deg);
+}
+  .Skills .progresses .progress:nth-of-type(1) .div span::after{
+    content: '90%';
+
+  
+}
+
+.Skills .progresses .progress:nth-of-type(2) .div span::after{
+    content: '85%';
+    
+  
+}
+.Skills .progresses .progress:nth-of-type(3) .div span::after{
+    content: '80%';
+ 
+  
+}.Skills .progresses .progress:nth-of-type(4) .div span::after{
+    content: '95%';
+ 
+  
+}
+
+
+   /* =======End skills======= */
+   /* ======= End   testimonials and skills=======  */
+
+
+   /* ======= Start quot  =======  */
+   .quote{
+    margin-top: 100px;
+    position: relative;
+    width: 100vw;
+    max-height: 400px;
+    overflow: hidden;
+   }
+
+   .quote img{
+    width: 100%;
+   max-height:100%;
+   }
+  
+ 
+
+.quotText{
+position: absolute;
+color: #fff;
+/* max-width: 90%; */
+width: 96%;
+z-index: 999;
+top: 50%;
+text-align: center;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.quotText q{
+    font-size: 35px;
+    display: block;
+    margin-bottom: 30px;
+}
+   /* ======= End   quot=======  */
+
+
+   /* ======= Start   pricePlan=======  */
+   .pricePlans{
+    margin-top: 100px;
+   }
+   .pricePlans .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+   }
+  .pricePlans .price{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    max-width:500px ;
+    height: 600px;
+    grid-template-rows: repeat(3,1fr);
+    
+   }
+.pricePlans .price .cost{
+    flex-direction: column;
+    justify-content: center;
+}
+  .pricePlans .price >div ,
+    .price >ul {
+         
+        border-top: 1px solid #19c8fa;
+   }
+  .pricePlans .price ul{
+     flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+   
+   }
+
+  .pricePlans .price ul li{
+    padding: 20px 0px;
+    width: max-content;
+
+    }
+  .pricePlans .price ul li:not(:last-child){
+    border-bottom: 1px solid #19c8fa;
+  }
+
+.pricePlans .price .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricePlans .price .button .btn
+{
+    outline: none;
+    padding: 18px 18px;
+    text-transform: capitalize;
+ 
+    background-color: transparent;
+    border: 1px solid #19c8fa;
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.668);
+}
+.pricePlans .price .button .btn:hover
+{
+    background-color: #19c8fa;
+}
+
+.pricePlans .price .costNumber{
+    position: relative;
+    font-size: 55px;
+
+}
+.pricePlans .price .costNumber::before{
+    content: '$';
+    position: absolute;
+    font-weight: normal;
+    font-size: 25px;
+    top: -6px;
+    left: 30%;
+    
+    }
+    .pricePlans .price .costNumber::after{
+        content: '/MO';
+        position: absolute;
+        /* font-weight: normal; */
+        font-size: 18px;
+        bottom: 0;
+        font-weight: bold;
+        right: 25%;
+        
+        }
+   /* ======= End   pricePlan=======  */
+ 
+
+
+   /*  ======= Start     subscribe=======  */
+ .subscribe,footer{ margin-top: 80px;
+    position: relative;
+    width: 100vw;
+    max-height: 300px;
+    overflow: hidden;
+   }
+
+   .subscribe img,footer .background {
+    width: 100%;
+   max-height:100%;
+   }
+
+ .subscribe  .subscribeContent {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 9999;
+     min-width: 70%;
+     max-width: 80%;
+     /* margin: auto; */
+   }
+ .subscribe  .subscribeContent .input i{
+    color: #fff;
+ }
+.input .div{
+    align-self: center;
+    width: 100%;
+
+     }
+  .input {
+    border: 1px solid #fff;
+     height: 50px; background: transparent;
+     display: flex;
+     padding-left: 20px;
+ }
+
+  .input input { 
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+
+
+    outline: none;
+ }
+ .input input::placeholder { 
+    color: #fff;
+    text-transform: capitalize;
+ }
+ .subscribe  .subscribeContent .btn 
+  {
+    padding: 5px; 
+    background-color: transparent; 
+    outline: none; border: navajowhite;
+font-size: 15px;
+background-color: #19c8fa;
+color: #fff;
+ }
+  
+ 
+ /* ======= End     subscribe======= */
+
+
+ /* ======= Start      contactus======= */
+ .contactUs .contactUsInfo{
+    text-align: center 
+ }
+.contactUs  form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* height: 500px; */
+}
+
+
+
+.contactUs  form .main-input{
+    /* background-color: transparent; */
+    outline: none;
+    border: 1px solid gray;
+    padding: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    /* color: #fff; */
+    /* margin-left: 10px; */
+
+}
+
+.contactUs  form  textarea{
+    height:150px
+}
+
+.contactUs  form .btn{
+    background-color: #19c8fa;
+    width: 180px;
+    color: #fff;align-self: end;
+
+}
+ /* ======= End     contact us======= */
+
+
+
+
+ /* ======= Start    Footer======= */
+ 
+
+footer .footerContent{
+    color: #fff;
+    margin-top: 40px;
+}
+footer .footerContent {
+        display: flex;
+        /*text-align: center;
+        */justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        min-height: 200px;
+        max-height: 250px;
+        width: 300px;
+         
+}
+footer .footerContent .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+footer .footerContent ul {
+    
+justify-content: space-around;
+}
+footer .footerContent a{
+    color: #19c8fa;
+    margin: 0 5px;
+    font-weight: bold;
+}
+ /* ======= End     Footer======= */
+
+
+
+
+
+/*========== Start Media query   ========== */
+@media(max-width:768px) {
+
+    /*========== Start Header   ========== */
+
+
+    header .bars {
+        display: block;
+    }
+
+    header nav ul {
+        display: none !important;
+    }
+
+    header .bars:hover+ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start;
+        position: absolute;
+
+        width: 100vw;
+        height: max-content;
+        top: 120%;
+        left: 0%;
+    }
+
+    header nav ul .search {
+        display: none;
+    }
+
+    header:after {
+        top: 10px;
+    }
+
+    header ul li {
+        width: 100%;
+        background-color: rgb(0 0 0/50%);
+
+    }
+
+    /*========== End Header   ========== */
+
+
+    /*========== Start landing   ========== */
+
+    .landing .textBox {
+        width: 100%;
+        line-height: 1.8;
+        justify-content: center !important;
+        text-align: center;
+
+
+    }
+
+    /*========== End landing   ========== */
+
+    /*========== Start Services   ========== */
+    .servicesContent {
+        text-align: center;
+    }
+
+    .headingServices {
+        margin-top: 20px;
+        margin-bottom: -25px;
+        font-weight: bold;
+        color: #19c8fa;
+    }
+
+    /*========== End Services   ========== */
+
+
+/*========== Start Advantges   ========== */
+.advantages  .advantagesContent{
+    flex-basis: 100%;
+}
+.advantages .advanragesPhoto{
+
+    display: none;
+}
+/*========== End Advantges   ========== */
+
+/*========== Start portfolio   ========== */
+ 
+
+.portfolio .portfolioPhotos .photo{
+    flex-basis: 100%
+}
+ 
+
+/*========== End portfolio   ========== */
+    
+
+    /*========== Start About   ========== */
+    .about 
+     .photo2Textinfo{
+        flex-basis: 100%;
+    }
+    
+ .about .photo2{
+    width: 100vw;
+    padding: 500px 100px;}
+        /*========== End About   ========== */
+
+   /* ======= ٍStart   testimonials and skills=======  */
+
+   .testimonialsSkills .testimonaols .testimonialContent{
+    text-align: center;
+   }
+   .testimonialsSkills .testimonialContent .testimonialContentImg{
+    margin:20px auto;
+   }
+
+   
+   /* ======= End    testimonials and skills=======  */
+
+}
+
+@media(min-width:768px) {
+    /*========== Start Services   ========== */
+
+   .services .servicesContent {
+        display: flex;
+    }
+
+   .services .icon {
+        margin-right: 40px;
+      
+    }
+
+   .services .div {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+    /*========== End Services   ========== */
+
+    /*========== Start portfolio   ========== */
+ 
+
+.portfolio .portfolioPhotos .photo{
+    flex-basis: 50%;
+}
+    /*========== End portfolio   ========== */
+
+
+    /*========== Start About   ========== */
+    .about .photo2{
+        width: 100vw;
+        padding: 300px 150px;}
+.about .photo2Textinfo{
+    flex-basis: 50%;
+}
+    /*========== End About   ========== */
+
+    
+   /* ======= ٍStart   testimonials and skills=======  */
+ 
+   .testimonialsSkills .testimonaols .testimonialContent{
+    display: flex;
+    align-items: center;
+    
+   }
+   .testimonialsSkills .testimonaols .testimonialContent .text{
+    flex-basis: 80%;
+   }
+   .testimonialsSkills .testimonaols .testimonialContent .testimonialContentImg{
+    margin-right: 20px;
+   }
+   /* ======= End    testimonials and skills=======  */
+
+   .contactUs .container .contactUsBody {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: baseline;
+
+
+   }
+   .contactUs .container .contactUsBody .contactUsInfo {
+    display: flex;
+    height: 300px;
+    flex-direction: column; 
+    justify-content: space-around;
+   }
+
+   .contactUs .container .contactUsBody form {
+    flex: .7;
+   }
+ 
+}
+@media(max-width:992px) 
+
+{
+   .quote .overlay {
+        position: absolute;
+        width: 100%;
+        height: 99%;
+        background-color: rgb(0 0 0/60%);
+    }
+    
+}
+@media(min-width:992px) {
+    header .bars {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+
+
+    .servicesContent {
+        display: flex;
+    }
+    .portfolio .portfolioPhotos .photo{
+        /* margin-bottom: -4px; */
+        overflow: hidden;
+        flex-basis: 25%;}
+
+
+
+
+
+        .about .photo2 .photo2Text .photo2Textinfo{
+    flex-basis: 25%;
+
+        }
+
+       
+    }
+    @media(max-width:1200px) {
+
+
+        /* =======Start skills======= */
+      .testimonialsSkills .Skills{
+       margin-top: 100px;
+      }
+      /* =======End skills======= */
+    }
+@media(min-width:1201px) {
+  
+
+    .photo2{
+    padding: 200px 150px !important;
+
+    }
+  
+    .testimonialsSkills .container{
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2,47%);
+       justify-content: space-between;
+    }
+
+    .Skills .progresses {
+    margin-top: -5px;
+}
+
+}
+
+/*========== End   Media query  ========== */
